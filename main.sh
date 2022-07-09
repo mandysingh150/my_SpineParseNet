@@ -1,5 +1,5 @@
 #!/bin/bash
-data_root_dir=/public/data
+data_root_dir=/kaggle/working/SpineParseNet/
 echo "step 1: create the h5 dataset for coarse segmentation stage...................................................................."
 python -u ./datasets/coarse_create_h5.py --data_root_dir=${data_root_dir}
 echo "step 2: training the DeepLabv3+ model for coarse segmentation stage............................................................"
